@@ -6,29 +6,88 @@
         <title>Survey Form</title>
         
         
-        
         <!-- CSS Links -->
         <link rel="stylesheet" href="styles.css">
 
-        <!--Prism Css-->
+        <!-- Prism Css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.css">
 
-        <!--AOS CDN-->
+        <!-- AOS CDN -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <!--JQuery Link-->
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!-- jQuery Link -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     </head>
 
     <body>
         
+        <header>
+            <h1 id="title">Survey Form Change name</h1>
+            <p id="description">Lorem ipsum change description</p>
+        </header>
 
- 
+        <form id="survey-form">
+            <!-- Name Input -->
+            <label for="name" id="name-label">Name: </label>
+            <input required type="text" name="name-input" id="name" placeholder="John Doe">
 
-       <!--Prism Syntax Highlighter-->
+            <!--  Email Input -->
+            <label for="email" id="email-label">Email:</label>
+            <input required type="email" name="email-input" id="email" placeholder="example@mail.org">
+
+            <!--  Number Input -->
+            <label for="number" id="number-label">Number:</label>
+            <input type="number" name="number-input" id="number" required min="18" max="21" placeholder="18 - 21">
+
+            <!-- Dropdown -->
+            <label for="dropdown">Dropdown:</label>
+            <select id="dropdown">
+                <option value="1" id="option1">option1</option>
+                <option value="2" id="option2">option2</option>
+                <option value="3" id="option3">option3</option>
+                <option value="4" id="option4">option4</option>
+            </select>
+
+            <!-- Radio Groups -->
+            <div class="Radio1">
+                <input type="radio" name="radio-name" id="id" value="1">
+                <input type="radio" name="radio-name" id="id" value="2"> 
+                <input type="radio" name="radio-name" id="id" value="3">
+                <input type="radio" name="radio-name" id="id" value="4">
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox-name" id="checkid1" value="1">
+                <input type="checkbox" name="checkbox-name" id="checkid2" value="2">
+                <input type="checkbox" name="checkbox-name" id="checkid3" value="3">
+                <input type="checkbox" name="checkbox-name" id="checkid4" value="4">
+            </div>
+
+            <!-- Additional Comments -->
+            <label for="textarea">Additional Comments:</label>
+            <textarea name="text-area-input" id="textarea" cols="30" rows="10"></textarea>
+
+            <input type="submit" id="submit">
+
+        </form>
+
+
+
+
+
+       <!-- Bootstrap jQuery CDN -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+       <!-- Font Awesome CDN -->
+       <script src="https://kit.fontawesome.com/a7c2796868.js" crossorigin="anonymous"></script>
+
+       <!-- Prism Syntax Highlighter -->
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
 
-       <!--AOS JS CDN-->
+       <!-- AOS JS CDN -->
        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
        <!-- jQuery CDN -->
@@ -36,5 +95,8 @@
 
        <!-- Javascript Link -->
        <script type="text/javascript" src="main.js"></script>
+
+       <!-- FCC CDN -->
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
